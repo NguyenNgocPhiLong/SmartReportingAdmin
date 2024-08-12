@@ -11,15 +11,17 @@ function App() {
       {!token ? <div>
         LoginPage
       </div>
-    : <BrowserRouter>
-      <Sidebar>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/dashboard" element={<HomePage />} />
-        </Routes>
-      </Sidebar>
-    </BrowserRouter>  
-    }
+        : <BrowserRouter>
+          <Sidebar>
+            <Routes>
+              <Route path="/resource" element={<HomePage />} />
+              <Route path="/project" element={<HomePage />} />
+              <Route path="/process" element={<HomePage />} />
+              <Route path="/task" element={<HomePage />} />
+            </Routes>
+          </Sidebar>
+        </BrowserRouter>
+      }
     </div>
   )
 }

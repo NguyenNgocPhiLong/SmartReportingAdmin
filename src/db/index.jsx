@@ -9,7 +9,7 @@ export const db = {
             phone: "0935017200", // Số điện thoại người dùng
             cccd: "1974393801", // Số CCCD người dùng
             email: "nguyenvana@gmail.com", // Email người dùng
-            location: 0, // Vị trí (sử dụng giá trị enum)
+            position: 0, // Vị trí (sử dụng giá trị enum)
             status: 0, // Trạng thái (sử dụng giá trị enum)
             contractTypeL: 0, // Loại hợp đồng (sử dụng giá trị enum)
             startDate: "08/09/2024", // Ngày bắt đầu hợp đồng
@@ -23,7 +23,7 @@ export const db = {
             phone: "0935017200", // Số điện thoại người dùng
             cccd: "1974393801", // Số CCCD người dùng
             email: "nguyenvana@gmail.com", // Email người dùng
-            location: 0, // Vị trí (sử dụng giá trị enum)
+            position: 0, // Vị trí (sử dụng giá trị enum)
             status: 0, // Trạng thái (sử dụng giá trị enum)
             contractTypeL: 0, // Loại hợp đồng (sử dụng giá trị enum)
             startDate: "08/09/2024", // Ngày bắt đầu hợp đồng
@@ -34,7 +34,7 @@ export const db = {
 
 // Đối tượng chứa các giá trị enum cho người dùng
 export const newEnumUser = {
-    location: {
+    position: {
         testing: 0, // Vị trí Testing
         FE: 1, // Vị trí Front-End (FE)
         BE: 2  // Vị trí Back-End (BE)
@@ -47,7 +47,7 @@ export const newEnumUser = {
         fullTime: 0, // Loại hợp đồng toàn thời gian
         partTime: 1  // Loại hợp đồng bán thời gian
     },
-    contractTypeLf: {
+    contractTypeLf: { /// đổi lại
         intern: 0, // Loại hợp đồng thực tập
         Trial: 1,  // Loại hợp đồng thử việc
         Official: 2 // Loại hợp đồng chính thức

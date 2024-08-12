@@ -12,19 +12,19 @@ function TableCustom() {
                     <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
                             {/* Các tiêu đề cột của bảng */}
-                            <th scope="col" className="px-6 py-3">ID</th>
-                            <th scope="col" className="px-6 py-3">Full Name</th>
-                            <th scope="col" className="px-6 py-3">Date Birth</th>
-                            <th scope="col" className="px-6 py-3">Sex</th>
-                            <th scope="col" className="px-6 py-3">Phone</th>
-                            <th scope="col" className="px-6 py-3">CCCD</th>
-                            <th scope="col" className="px-6 py-3">Email</th>
-                            <th scope="col" className="px-6 py-3">Position</th>
-                            <th scope="col" className="px-6 py-3">Status</th>
-                            <th scope="col" className="px-6 py-3">Contract Type</th>
-                            <th scope="col" className="px-6 py-3">Start Date</th>
-                            <th scope="col" className="px-6 py-3">End Date</th>
-                            <th scope="col" className="px-6 py-3">Actions</th>
+                            <th scope="col" className="px-6 py-3 text-center">ID</th>
+                            <th scope="col" className="px-6 py-3 text-center">Full Name</th>
+                            <th scope="col" className="px-6 py-3 text-center">Date Birth</th>
+                            <th scope="col" className="px-6 py-3 text-center">Sex</th>
+                            <th scope="col" className="px-6 py-3 text-center">Phone</th>
+                            <th scope="col" className="px-6 py-3 text-center">CCCD</th>
+                            <th scope="col" className="px-6 py-3 text-center">Email</th>
+                            <th scope="col" className="px-6 py-3 text-center">Position</th>
+                            <th scope="col" className="px-6 py-3 text-center">Status</th>
+                            <th scope="col" className="px-6 py-3 text-center">Contract Type</th>
+                            <th scope="col" className="px-6 py-3 text-center">Start Date</th>
+                            <th scope="col" className="px-6 py-3 text-center">End Date</th>
+                            <th scope="col" className="px-6 py-3 text-center">Actions</th>
                         </tr>
                     </thead>
                     <tbody className="h-48 overflow-y-auto">
@@ -42,7 +42,7 @@ function TableCustom() {
                                 <td className="px-6 py-4">{user.email}</td>
                                 <td className="px-6 py-4">
                                     {/* Hiển thị tên vị trí dựa trên giá trị enum */}
-                                    {Object.keys(newEnumUser.location).find(key => newEnumUser.location[key] === user.location)}
+                                    {Object.keys(newEnumUser.position).find(key => newEnumUser.position[key] === user.position)}
                                 </td>
                                 <td className="px-6 py-4">
                                     {/* Hiển thị trạng thái dựa trên giá trị enum */}

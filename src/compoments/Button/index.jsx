@@ -49,9 +49,9 @@ function ButtonCustom() {
     }, [isDropdownOpen]);
 
     return (
-        <div className='w-full ml-5 mr-9 my-5'>
+        <div className='w-full ml-5 mr-9'>
             <div className='items-center space-x-4'>
-                <h1 className='font-bold text-3xl'>List Of Resource</h1>
+                <h1 className='font-bold text-3xl mb-4' >List Of Resource</h1>
                 <div className='pl-72 flex relative'>
                     <input
                         className='w-1/5 h-10 pl-3 border-2 border-black rounded-md'
@@ -78,7 +78,7 @@ function ButtonCustom() {
                             </div>
                         )}
                     </div>
-                    <button className='absolute right-24 bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600'>
+                    <button className='absolute right-8 bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600'>
                         +Create
                     </button>
                 </div>
