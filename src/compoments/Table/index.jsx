@@ -45,9 +45,12 @@ function TableCustom() {
                                     {Object.keys(newEnumUser.position).find(key => newEnumUser.position[key] === user.position)}
                                 </td>
                                 <td className="px-6 py-4">
-                                    {/* Hiển thị trạng thái dựa trên giá trị enum */}
-                                    {Object.keys(newEnumUser.status).find(key => newEnumUser.status[key] === user.status)}
+                                    {/* Hiển thị trạng thái dựa trên giá trị enum và áp dụng màu sắc */}
+                                    <span className={user.status === newEnumUser.status.active ? "text-blue-500" : "text-red-500"}>
+                                        {Object.keys(newEnumUser.status).find(key => newEnumUser.status[key] === user.status)}
+                                    </span>
                                 </td>
+
                                 <td className="px-6 py-4">
                                     {/* Hiển thị loại hợp đồng dựa trên giá trị enum */}
                                     {Object.keys(newEnumUser.contractTypeL).find(key => newEnumUser.contractTypeL[key] === user.contractTypeL)}
